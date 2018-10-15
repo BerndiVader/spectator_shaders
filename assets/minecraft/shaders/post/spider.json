@@ -1,0 +1,27 @@
+{
+    "targets": [
+        "buffer"
+    ],
+    "passes": [
+        {
+            "name": "blur",
+            "intarget": "minecraft:main",
+            "outtarget": "buffer",
+            "uniforms": [
+                {
+                    "name": "BlurDir",
+                    "values": [ 0.0, 0.0 ]
+                },
+                {
+                    "name": "Radius",
+                    "values": [ 0.0 ]
+                }
+            ]
+        },
+        {
+            "name": "rad_blur",
+            "intarget": "buffer",
+            "outtarget": "minecraft:main"
+        }
+    ]
+}
